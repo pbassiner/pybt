@@ -20,7 +20,7 @@ set -e
 
 clean() {
 	echo "Running clean command"
-	pipenv --rm | true
+	pipenv uninstall --all
 }
 
 init() {
